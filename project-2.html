@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 2</title>
-    <meta name="description" content="Case study page of Project" />
+    <title>Details of Pick Up Car</title>
+    <meta
+      name="description"
+      content="Autonomous trash-collecting vehicle: Ackermann steering, 3-DOF arm, and iterative FDM hardware."
+    />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -22,12 +25,12 @@
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
+              src="./assets/Pictures/Janice Head Shot 1.jpg"
+              alt="Janice Hu logo image"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Janice Hu</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -84,16 +87,13 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 2</h1>
+        <h1 class="heading-primary">Pick Up Car</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            Mobile platform with Ackermann steering and a 3-DOF manipulator for
+            picking debris from constrained spaces—designed, printed, assembled,
+            and debugged through real-world load and tolerance failures.
           </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
         </div>
       </div>
     </section>
@@ -102,62 +102,339 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
+              src="./assets/Pictures/Pick me up/pick up arm CAD 1.jpg"
+              alt="Pick up car and manipulator CAD overview"
               class="project-details__showcase-img"
             />
           </div>
-          <div class="project-details__content-main">
+          <div class="project-details__content-main project-details__content-main--wide">
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+              <p class="project-details__subtitle">
+                Autonomous Trash-Collecting Vehicle
               </p>
+
+              <h4 class="project-details__section-heading">The Challenge</h4>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                The objective of this project was to design and assemble a mobile
+                robotic vehicle to remove small obstacles and debris from urban
+                streets. The system required a fully integrated vehicle platform with
+                independent propulsion and steering, paired with a 3-DOF
+                manipulator arm. The robotic arm needed two revolute joints for
+                angular positioning and one prismatic joint for linear extension,
+                allowing the end-effector to reach into narrow or constrained areas
+                for collection operations.
               </p>
+
+              <h4 class="project-details__section-heading">
+                My Role: Hardware &amp; Mechanical Design Lead
+              </h4>
+              <p class="project-details__desc-para">
+                I was primarily in charge of the physical hardware, managing the
+                mechanical design, assembly, and rigorous troubleshooting of the
+                system. I specifically architected the vehicle's steering mechanism
+                and took the lead on iterating our 3D-printed components. By
+                analyzing structural failures under dynamic loads, I continually
+                refined our CAD models and printing parameters to overcome the
+                material limitations of PLA and ensure the physical vehicle could
+                perform reliably in the real world.
+              </p>
+
+              <h4 class="project-details__section-heading">
+                Hardware Architecture &amp; Design
+              </h4>
+              <p class="project-details__desc-para">
+                To ensure smooth navigation and reliable object retrieval, I focused
+                on structural rigidity and precise mechanical linkages across the
+                vehicle and the arm:
+              </p>
+
+              <div class="project-details__report-row project-details__report-row--tight">
+                <div
+                  class="project-details__report-media project-details__report-media--hardware-compact"
+                >
+                  <img
+                    src="./assets/Pictures/Pick me up/pick up full.jpg"
+                    alt="Pick up car mobile platform assembled"
+                  />
+                  <p class="project-details__report-caption">
+                    Full vehicle: propulsion, steering, and manipulator integrated
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Ackermann Steering System
+                  </h5>
+                  <p>
+                    I designed a custom rack-and-pinion steering assembly driven by
+                    a central, high-torque servo motor. I integrated Ackermann
+                    steering geometry into the tie rods and steering knuckles so
+                    that the inner wheel rotates at a steeper angle than the outer
+                    wheel during turns. This prevented tire scrubbing and reduced
+                    the load on the servo during tight maneuvers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Pick me up/pick up turning wheel.jpg"
+                    alt="Steering linkage and wheel hardware detail"
+                  />
+                  <p class="project-details__report-caption">
+                    Steering linkage at the wheel
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Steering hardware detail
+                  </h5>
+                  <p>
+                    Tie rods, knuckles, and wheel-side hardware implemented the
+                    Ackermann layout on the physical chassis—where print tolerance
+                    and backlash had to be tuned so the servo did not stall in hard
+                    turns.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row project-details__report-row--reverse">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Pick me up/Pick up arm CAD.jpg"
+                    alt="CAD of 3-DOF manipulator arm"
+                  />
+                  <p class="project-details__report-caption">
+                    R-R-P manipulator CAD (revolute-revolute-prismatic)
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    3-DOF Manipulator Evolution
+                  </h5>
+                  <p>
+                    I engineered the R-R-P (Revolute-Revolute-Prismatic) arm
+                    structure to maximize our workspace. When our initial worm-gear
+                    prismatic joint failed due to 3D printing tolerance limitations,
+                    I quickly redesigned it into a robust rack-and-pinion linear
+                    extension mechanism to guarantee reliable meshing.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Pick me up/pick up arm pic.jpg"
+                    alt="Physical manipulator arm on the vehicle"
+                  />
+                  <p class="project-details__report-caption">
+                    Physical arm on the vehicle during bring-up
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Prototype build
+                  </h5>
+                  <p>
+                    The assembled arm had to survive repeated extension cycles and
+                    side loads while we iterated joint preload, fastener torque, and
+                    print orientation before locking the rack-and-pinion prismatic
+                    stage.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row project-details__report-row--reverse">
+                <div class="project-details__report-media">
+                  <video controls playsinline preload="metadata">
+                    <source
+                      src="./assets/Pictures/Pick me up/Pick up arm testing.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  <p class="project-details__report-caption">
+                    Arm motion and workspace testing
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Arm testing (video)
+                  </h5>
+                  <p>
+                    Video capture of the arm under motion helped verify range,
+                    interference, and whether printed teeth stayed engaged through the
+                    prismatic stroke.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row">
+                <div class="project-details__report-media">
+                  <video controls playsinline preload="metadata">
+                    <source
+                      src="./assets/Pictures/Pick me up/Pick up arm Failing Process.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  <p class="project-details__report-caption">
+                    Failure modes on early prismatic / worm-gear concepts
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Failure analysis (video)
+                  </h5>
+                  <p>
+                    Documenting the failing process made it clear where tolerance
+                    stack-up and tooth engagement were insufficient—directly informing
+                    the rack-and-pinion redesign and print settings.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row project-details__report-row--tight">
+                <div
+                  class="project-details__report-media project-details__report-media--hardware-compact"
+                >
+                  <img
+                    src="./assets/Pictures/Pick me up/pick up gear box.jpg"
+                    alt="Gearbox and drivetrain hardware"
+                  />
+                  <p class="project-details__report-caption">
+                    Gearbox / transmission hardware
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Iterative Structural Reinforcement
+                  </h5>
+                  <p>
+                    During early testing without PID control, abrupt oscillatory
+                    motions caused our keyed-shaft joint connections to fracture. I
+                    troubleshot this by redesigning the linkages to mount directly to
+                    the motor flanges for a more rigid connection. I also increased
+                    wall thicknesses, added reinforcement ribs, and fine-tuned
+                    extrusion parameters to ensure our FDM-printed parts could
+                    survive high torque loads.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row project-details__report-row--reverse">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Pick me up/pick up arm grip.jpg"
+                    alt="Gripper and end-effector hardware"
+                  />
+                  <p class="project-details__report-caption">
+                    Gripper / end-effector interface
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    End-effector hardware
+                  </h5>
+                  <p>
+                    Gripper-side parts saw high shock during contact; rib layout and
+                    flange-mounted interfaces reduced stress concentrations compared
+                    to keyed-shaft joints alone.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Pick me up/pick up box.jpg"
+                    alt="Printed structural housing and enclosure"
+                  />
+                  <p class="project-details__report-caption">
+                    Printed housings with thicker walls and ribs
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Printed enclosures
+                  </h5>
+                  <p>
+                    Enclosures and brackets were revised to add material only where
+                    moment and bearing reactions demanded it—balancing print time with
+                    stiffness for the chassis and arm bases.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row project-details__report-row--reverse">
+                <div class="project-details__report-media">
+                  <video controls playsinline preload="metadata">
+                    <source
+                      src="./assets/Pictures/Pick me up/pick up testing vieo.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  <video controls playsinline preload="metadata">
+                    <source
+                      src="./assets/Pictures/Pick me up/pick up testing vieo 1.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  <p class="project-details__report-caption">
+                    Full-vehicle integration testing (two runs)
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Vehicle-level testing (video)
+                  </h5>
+                  <p>
+                    On-vehicle runs exposed the dynamic loading that fractured keyed
+                    joints and motivated flange-mounted linkages, ribbing, and slicer
+                    parameter changes across the platform.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Pick me up/pick up arm CAD 1.jpg"
+                    alt="CAD overview matching project portfolio thumbnail"
+                  />
+                  <p class="project-details__report-caption">
+                    CAD overview (same assembly as project index / hero)
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    System-level CAD
+                  </h5>
+                  <p>
+                    This top-level CAD matches the portfolio introduction image:
+                    chassis, steering package, and manipulator in one revision used
+                    to align the team on interfaces before fabrication.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
-              <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+              <div class="project-details__tools-used-list">
+                <div class="project-details__tools-used-item">SolidWorks</div>
+                <div class="project-details__tools-used-item">Mechanism Design</div>
+                <div class="project-details__tools-used-item">Kinematic Linkages</div>
+                <div class="project-details__tools-used-item">3D Printing</div>
+                <div class="project-details__tools-used-item">Hardware Assembly</div>
+                <div class="project-details__tools-used-item">Failure Analysis</div>
+                <div class="project-details__tools-used-item">Workspace Analysis</div>
+                <div class="project-details__tools-used-item">Static Force Analysis</div>
+                <div class="project-details__tools-used-item">Inverse Kinematics</div>
               </div>
-            </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
-              <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
             </div>
           </div>
         </div>
@@ -171,45 +448,32 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                href="https://www.linkedin.com/in/janicehu2001/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
-                  alt="icon"
+                  alt="Janice Hu on LinkedIn"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                href="https://www.instagram.com/janicehu_0829/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img
                   class="main-footer__icon main-footer__icon--mr-none"
                   src="./assets/png/insta-ico.png"
-                  alt="icon"
+                  alt="Janice Hu on Instagram"
                 />
               </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Janice Hu</h4>
             <p class="main-footer__short-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
               tempora explicabo quae quod deserunt

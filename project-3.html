@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 3</title>
-    <meta name="description" content="Case study page of Project" />
+    <title>Details of How to make a S'more</title>
+    <meta name="description" content="Capstone: autonomous mobile manipulator for preparing a s'more" />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -22,12 +22,12 @@
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
-              alt="Ram Maheshwari Logo Image"
+              src="./assets/Pictures/Janice Head Shot 1.jpg"
+              alt="Janice Hu logo image"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Janice Hu</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -84,16 +84,13 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 3</h1>
+        <h1 class="heading-primary">How to make a S'more</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            Autonomous mobile manipulator capstone: obstacle course navigation,
+            precision stop, vision-guided pickup, and an electrically heated
+            gripper—completed within a 30-second autonomous run.
           </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
         </div>
       </div>
     </section>
@@ -102,62 +99,174 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
-              alt="Project Image"
+              src="./assets/Pictures/How to make a S'more/Smore CAD Full.png"
+              alt="S'more robot full CAD assembly"
               class="project-details__showcase-img"
             />
           </div>
-          <div class="project-details__content-main">
+          <div class="project-details__content-main project-details__content-main--wide">
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+              <p class="project-details__subtitle">
+                Autonomous S'more-Making Mobile Manipulator
               </p>
+
+              <h4 class="project-details__section-heading">The Challenge</h4>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                The goal of this capstone project was to design and build an
+                autonomous mobile manipulator robot capable of preparing a s'more
+                within a single, continuous workflow. The system was required to
+                autonomously maneuver through an obstacle course, stop precisely
+                within a 1-inch clearance of a finishing line, and transition into
+                a manipulation phase. From there, the robot had to visually
+                identify a marshmallow from multiple objects within a 12-inch
+                radius, retrieve it, transport it to the chassis, and toast it
+                using a custom electrically heated mechanism integrated into the
+                gripper. The entire operation had to be executed autonomously
+                within a strict 30-second time limit.
               </p>
+
+              <h4 class="project-details__section-heading">
+                My Role: Project Manager &amp; Hardware Lead
+              </h4>
+              <p class="project-details__desc-para">
+                As the Project Manager and Hardware Lead, I directed the complete
+                hardware lifecycle—from initial white-boarding and CAD modeling to
+                physical prototyping, assembly, and rigorous troubleshooting. I was
+                responsible for coordinating our engineering team, distributing
+                tasks, and aligning everyone's diverse design ideas into a single,
+                cohesive mechanical direction. By bridging the gap between
+                mechanical structures, electronics, and software, I ensured the
+                physical hardware could reliably support the complex autonomous
+                tasks.
+              </p>
+
+              <h4 class="project-details__section-heading">
+                Hardware Architecture &amp; Design
+              </h4>
+              <p class="project-details__desc-para">
+                To achieve our functional requirements, I oversaw the integration
+                of five primary subassemblies: the chassis-electric base,
+                independent front and back wheel suspensions, a sliding protective
+                enclosure, and the arm-turntable interface.
+              </p>
+
+              <div class="project-details__report-row project-details__report-row--tight">
+                <div
+                  class="project-details__report-media project-details__report-media--hardware-compact"
+                >
+                  <img
+                    src="./assets/Pictures/How to make a S'more/Smore Hardware 1.jpg"
+                    alt="Hardware integration on the s'more robot"
+                  />
+                  <p class="project-details__report-caption">
+                    Hardware integration and assembly detail
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Robust Chassis &amp; Suspension
+                  </h5>
+                  <p>
+                    The mobile platform was built around a rigid 6061 T6
+                    aluminum main chassis plate. It featured a double wishbone
+                    linkage suspension system equipped with compression springs
+                    designed to absorb kinetic energy, allowing the rover to
+                    survive a 1-meter drop test and an impact test from a
+                    basketball without losing functionality.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row project-details__report-row--reverse">
+                <div
+                  class="project-details__report-media project-details__report-media--sm-arm-portrait"
+                >
+                  <img
+                    src="./assets/Pictures/How to make a S'more/Smore Arm.jpg"
+                    alt="Manipulator arm on the mobile robot"
+                  />
+                  <p class="project-details__report-caption">
+                    Two-link planar manipulator on the platform
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Manipulator Arm Dynamics
+                  </h5>
+                  <p>
+                    I heavily focused on the manipulator's structural design,
+                    engineering a two-link planar mechanism to satisfy a 12-inch
+                    vertical workspace. To minimize the resistive torque acting on
+                    the shoulder joint, I designed the links with a hollow interior
+                    and a tapered profile, successfully shifting the center of mass
+                    closer to the pivot while maintaining the moment of inertia
+                    required to resist bending.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row project-details__report-row--reverse">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/How to make a S'more/Smore Arm CAD.png"
+                    alt="CAD model of the manipulator arm assembly"
+                  />
+                  <p class="project-details__report-caption">
+                    Arm assembly (CAD): two-link planar mechanism
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Manipulator CAD
+                  </h5>
+                  <p>
+                    The CAD assembly shows the hollow, tapered links and the
+                    shoulder pivot layout used to keep mass close to the joint while
+                    preserving bending stiffness over the 12-inch workspace.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/How to make a S'more/Lazy susan CAD.png"
+                    alt="CAD model of lazy susan bearing mount for the arm turntable"
+                  />
+                  <p class="project-details__report-caption">
+                    Lazy susan bearing interface (CAD)
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Rotational Stability
+                  </h5>
+                  <p>
+                    The arm was mounted to a 4-inch lazy-susan bearing with a
+                    static load capacity of 500 lbs. This centralized the
+                    structural interface at the top plate, ensuring that
+                    overturning moments generated by the arm were effectively
+                    transferred down through the chassis to prevent tipping during
+                    the manipulation phase.
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
-              <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+              <div class="project-details__tools-used-list">
+                <div class="project-details__tools-used-item">SolidWorks</div>
+                <div class="project-details__tools-used-item">Fusion 360</div>
+                <div class="project-details__tools-used-item">Arduino</div>
+                <div class="project-details__tools-used-item">3D Printing</div>
+                <div class="project-details__tools-used-item">
+                  Mechanical Design &amp; Kinematics
+                </div>
+                <div class="project-details__tools-used-item">MATLAB</div>
+                <div class="project-details__tools-used-item">Control Systems</div>
+                <div class="project-details__tools-used-item">Motor Control</div>
               </div>
-            </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
-              <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
             </div>
           </div>
         </div>
@@ -171,45 +280,32 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                href="https://www.linkedin.com/in/janicehu2001/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
-                  alt="icon"
+                  alt="Janice Hu on LinkedIn"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                href="https://www.instagram.com/janicehu_0829/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img
                   class="main-footer__icon main-footer__icon--mr-none"
                   src="./assets/png/insta-ico.png"
-                  alt="icon"
+                  alt="Janice Hu on Instagram"
                 />
               </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Janice Hu</h4>
             <p class="main-footer__short-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
               tempora explicabo quae quod deserunt

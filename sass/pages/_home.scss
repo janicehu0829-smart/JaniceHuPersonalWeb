@@ -92,6 +92,51 @@
 
 .about {
   background: rgb(250, 250, 250);
+  &__intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: start;
+    margin: 0 auto 7rem auto;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__intro-image-wrap {
+    max-width: 28rem;
+    width: 100%;
+
+    @include respond(tab-port) {
+      max-width: 24rem;
+    }
+  }
+
+  &__intro-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: $commonBorderRadius;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  &__intro-text {
+    text-align: left;
+    color: #555;
+    font-size: 1.8rem;
+    line-height: 1.7;
+
+    p {
+      margin-bottom: 1.8rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,6 +166,24 @@
       &:last-child {
         margin-bottom: 4rem;
       }
+    }
+
+    &-photo-wrap {
+      margin-top: 3rem;
+      max-width: 32rem;
+      width: 100%;
+
+      @include respond(tab-port) {
+        max-width: 28rem;
+      }
+    }
+
+    &-photo {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: $commonBorderRadius;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.12);
     }
   }
 }
@@ -168,10 +231,18 @@
       &-title {
         font-weight: 700;
         font-size: 2.8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0.8rem;
         @include respond(phone) {
           font-size: 2.4rem;
         }
+      }
+      &-date {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $themeClrPrimary;
+        font-weight: 700;
+        margin-bottom: 1.6rem;
       }
       &-desc {
         font-size: 1.8rem;
@@ -203,13 +274,64 @@
     padding: 4rem;
     margin-top: 6rem;
     max-width: 80rem;
-    text-align: right;
+    text-align: left;
     width: 95%;
     border-radius: $commonBorderRadius;
 
     margin: 5rem auto 0 auto;
     @include respond(phone) {
       padding: 3rem;
+    }
+  }
+
+  &__info {
+    text-align: left;
+  }
+
+  &__info-row {
+    margin-bottom: 4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__info-label {
+    display: block;
+  }
+
+  &__info-value {
+    display: block;
+    color: #333;
+    padding: 2rem;
+    width: 100%;
+    border: 1px solid rgb(235, 235, 235);
+    font-size: 1.6rem;
+    letter-spacing: 0px;
+    background: rgba(rgb(240, 240, 240), 1);
+    border-radius: $commonBorderRadius;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    box-sizing: border-box;
+
+    &:hover {
+      color: $themeClrPrimary;
+      border-color: rgba($themeClrPrimary, 0.35);
+    }
+
+    &--static {
+      margin: 0;
+      cursor: default;
+
+      &:hover {
+        color: #333;
+        border-color: rgb(235, 235, 235);
+      }
     }
   }
   &__form-field {

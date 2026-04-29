@@ -1,6 +1,26 @@
 .skills {
   display: flex;
   flex-wrap: wrap;
+
+  &--grouped {
+    display: block;
+  }
+
+  &__group {
+    margin-bottom: 2.6rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__group-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: #333;
+  }
+
   &__skill {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;

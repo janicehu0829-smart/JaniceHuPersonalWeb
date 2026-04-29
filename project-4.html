@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Details of Robotic Hand</title>
+    <meta
+      name="description"
+      content="RoMeLa research: wearable kinematic capture and tactile sensing for a dexterous robotic hand program."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/Pictures/Janice Head Shot 1.jpg"
+              alt="Janice Hu logo image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Janice Hu</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Robotic Hand</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            RoMeLa research toward a highly dexterous hand: wearable kinematic
+            capture, tactile metrology, and iterative hardware—built to inform a
+            future 19-DOF mechanical architecture.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/Pictures/Robotic Hand/Robotic Hand Data Collection final.png"
+              alt="Robotic hand research data collection hardware"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main project-details__content-main--wide">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__subtitle">
+                Dexterous Hand Research &amp; Sensing
+              </p>
+
+              <h4 class="project-details__section-heading">The Challenge</h4>
+              <p class="project-details__desc-para">
+                The initial objective of this research project was to develop a
+                highly dexterous, multi-DOF humanoid robotic hand. However, to
+                accurately replicate human dexterity, we first needed to collect
+                precise kinematic data on how human finger joints move. This
+                required us to pivot and build a custom wearable data collection
+                device to track joint movements, as well as a highly accurate
+                tactile sensor measurement system to evaluate contact forces and
+                feedback.
+              </p>
+
+              <h4 class="project-details__section-heading">
+                My Role: Hardware &amp; Research Lead
+              </h4>
+              <p class="project-details__desc-para">
+                As an Undergraduate Researcher at RoMeLa, I spearheaded the
+                benchmarking of existing commercial robotic hands, studying their
+                complex assemblies to inform our own 19-DOF mechanical
+                architecture. I also managed the hands-on fabrication, taking
+                charge of the electrical soldering, 3D printing iterative
+                prototypes, and engineering the custom testing rigs for our tactile
+                sensors.
+              </p>
+              <p class="project-details__desc-para">
+                That benchmarking phase meant translating design intent from products
+                built for manufacturing into lessons we could reuse at lab scale:
+                how tendon routes behave under pretension, where bearings and pulleys
+                live relative to actuators, and how wiring exits without limiting
+                workspace. Those teardown insights directly influenced how much volume
+                we budgeted per finger on our target architecture and where we
+                expected calibration headaches to appear once we moved from CAD to
+                printed plastic.
+              </p>
+
+              <h4 class="project-details__section-heading">
+                Hardware Architecture &amp; Troubleshooting
+              </h4>
+              <p class="project-details__desc-para">
+                To overcome the physical limitations of our early prototypes, I
+                focused on iterative design and creative hardware solutions. The work
+                naturally splits into three threads—wearable kinematic capture, tactile
+                metrology, and electrical integration—which the photos below follow in
+                roughly chronological order from rough concepts through integrated
+                rigs.
+              </p>
+
+              <h4 class="project-details__section-heading">
+                Wearable kinematic capture
+              </h4>
+
+              <div class="project-details__report-row">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Robotic Hand/Robotic Hand Data collection V1.png"
+                    alt="Early wearable data collection glove prototype"
+                  />
+                  <p class="project-details__report-caption">
+                    Early wearable kinematic capture iteration (V1)
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Wearable Data Collection Device — early iterations
+                  </h5>
+                  <p>
+                    We developed a wearable glove device to capture finger joint
+                    movements, but early iterations were difficult to wear and failed
+                    to accurately track the complex, multi-axis kinematics of the
+                    thumb. I worked through multiple failure cycles, rapidly 3D
+                    printing new customized parts to improve the ergonomics and
+                    optimize the sensor placement for accurate data capture.
+                  </p>
+                  <p>
+                    The thumb path was the recurring bottleneck: unlike the fingers,
+                    it couples roll and abduction in ways that are easy to average away
+                    in software if the mechanical coupling on the glove is sloppy. Each
+                    revision tightened tolerances between printed guides and strap
+                    anchors so joint axes stayed consistent across repeated donning and
+                    removal—the kind of repeatability we needed before any downstream
+                    controller could trust the joint angles.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row project-details__report-row--reverse">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Robotic Hand/Robotic Hand Data Collection final picture.png"
+                    alt="Refined wearable data collection prototype in use"
+                  />
+                  <p class="project-details__report-caption">
+                    Wearable prototype closer to final ergonomics and sensor layout
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Integrated wearable prototype
+                  </h5>
+                  <p>
+                    As the glove matured, the emphasis shifted from “does anything
+                    measure?” to “does it measure the same thing twice?” We routed
+                    sensing closer to the joints we cared about for inverse kinematics,
+                    trimmed bulk where it interfered with natural closure, and iterated
+                    strap geometry so subjects could maintain a relaxed neutral pose
+                    during long calibration captures without shifting the hardware on
+                    their hands.
+                  </p>
+                  <p>
+                    This stage sat directly upstream of dataset quality: before we
+                    could argue about neural nets or filtering, the gloves had to stay
+                    mechanically repeatable minute-to-minute. That requirement drove a
+                    lot of mundane but critical choices—screw sizes that did not strip
+                    in PLA after ten swaps, cable exits that did not torque the PCB when
+                    the hand opened fully, and retention features that still cleared the
+                    palm during power grasps.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Robotic Hand/Robotic Hand Data Collection final 2.png"
+                    alt="Alternate view of completed data collection hardware assembly"
+                  />
+                  <p class="project-details__report-caption">
+                    Alternate view of the integrated capture hardware
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    System integration snapshot
+                  </h5>
+                  <p>
+                    The later assemblies bundled sensing, routing, and anchors into a
+                    single mechanical story: printed shells carried PCB outlines,
+                    strain-relief features managed flex tails from moving joints, and
+                    anchor points stayed co-planar enough that calibration poses stayed
+                    identifiable on camera when we cross-checked portions of the
+                    pipeline.
+                  </p>
+                  <p>
+                    This view also highlights how tightly coupled                     mechanical and
+                    electrical schedules became—every hole pattern on the printed frame
+                    eventually lined up with either a sensor carrier or a cable tie-down,
+                    so revisions were rarely “CAD-only”; they rippled into soldering
+                    order-of-operations and connector accessibility during debugging sessions.
+                  </p>
+                </div>
+              </div>
+
+              <h4 class="project-details__section-heading">
+                Tactile sensing &amp; calibration rigs
+              </h4>
+
+              <div class="project-details__report-row">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Robotic Hand/Robotic Hand Sensor.jpg"
+                    alt="Tactile sensor hardware and sensing elements"
+                  />
+                  <p class="project-details__report-caption">
+                    Tactile sensor hardware prior to calibration experiments
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Sensor hardware focus
+                  </h5>
+                  <p>
+                    Before we trusted any automated motion platform, we isolated the
+                    tactile hardware itself: verifying interconnect integrity,
+                    conditioning electronics noise floors, and confirming that repeated
+                    seating against a probe produced distributions tight enough to
+                    benchmark comparably across days. Those checks informed how
+                    aggressively we could later automate scans without mistaking drift
+                    for material behavior.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row project-details__report-row--reverse">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Robotic Hand/Robotic Hand Sensor Process.png"
+                    alt="Documented tactile sensor calibration process setup"
+                  />
+                  <p class="project-details__report-caption">
+                    Calibration workflow documentation (process view)
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Calibration workflow
+                  </h5>
+                  <p>
+                    Once sensors survived bench checks, we formalized a repeatable
+                    calibration choreography: fixture alignment, probe approach speeds,
+                    dwell times, and safe retraction so soft materials were not
+                    overstressed during repetitive characterization. Documenting the
+                    setup—rather than only the numbers—made it easier when another
+                    researcher needed to reproduce a dataset months later.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Robotic Hand/Robotic Hand Sensor Process 2.png"
+                    alt="Repurposed 3D printer gantry tactile measurement rig detail"
+                  />
+                  <p class="project-details__report-caption">
+                    Gantry-mounted probe and custom brackets on printer XYZ axes
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Printer gantry as a Cartesian rig
+                  </h5>
+                  <p>
+                    We initially struggled to get accurate, repeatable tactile sensor
+                    measurements using a standard robotic arm. To solve this, I
+                    repurposed a 3D printer's mechanical gantry. By designing and
+                    assembling custom mounting hardware, I utilized the printer's
+                    highly precise XYZ coordinate system to move our measurement tool,
+                    allowing us to capture much more detailed and accurate tactile
+                    readings.
+                  </p>
+                  <p>
+                    This photograph emphasizes the mechanical narrative: brackets tied
+                    the probe assembly to an existing Cartesian frame we trusted,
+                    trading workspace envelope for repeatability and stiffness—often the
+                    right trade when characterization noise dominates exploration noise.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details__report-row project-details__report-row--reverse">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Robotic Hand/Robotic Hand Sensor Process.jpg"
+                    alt="Full tactile sensor calibration setup and measurement rig"
+                  />
+                  <p class="project-details__report-caption">
+                    Complete tactile calibration rig in context
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Tactile Sensor Calibration Rig — full setup
+                  </h5>
+                  <p>
+                    Stepping back, the full rig shows routing discipline as important as
+                    motion precision: grounded bundles away from encoder leads,
+                    staged cable loops that did not tug when the gantry hit limits, and
+                    anchoring that kept the tactile patch mechanically referenced to the
+                    probe path across long sessions.
+                  </p>
+                  <p>
+                    That context matters because tactile datasets are sensitive to
+                    unseen degrees of freedom—small slips between fixture and sensor
+                    housing show up as phantom hysteresis. We iterated bracket stiffness
+                    until scans looked stable before touching software filtering.
+                  </p>
+                </div>
+              </div>
+
+              <h4 class="project-details__section-heading">
+                Electrical integration &amp; prototyping
+              </h4>
+
+              <div class="project-details__report-row">
+                <div class="project-details__report-media">
+                  <img
+                    src="./assets/Pictures/Robotic Hand/Robotic Hand Sensor Process 1.jpg"
+                    alt="Electrical soldering and sensor integration for prototypes"
+                  />
+                  <p class="project-details__report-caption">
+                    Bench soldering, rework, and harness integration
+                  </p>
+                </div>
+                <div class="project-details__report-text">
+                  <h5 class="project-details__subsection-heading">
+                    Electrical Integration &amp; Prototyping
+                  </h5>
+                  <p>
+                    I managed the physical electrical integration for the project,
+                    performing the majority of the soldering for the sensor wiring
+                    and custom control boards. This ensured a reliable bridge between
+                    our data collection software and the physical 3D-printed
+                    hardware.
+                  </p>
+                  <p>
+                    Practically, that meant planning rework-friendly layouts: connector
+                    orientation where heat-shrink access stayed possible after mounting,
+                    strain relief that survived glove flex cycles, and grounding strategy
+                    so analog front ends did not pick up motor PWM noise when we later
+                    drove nearby channels during integrated demos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="project-details__tools-used-list">
+                <div class="project-details__tools-used-item">SolidWorks</div>
+                <div class="project-details__tools-used-item">
+                  Literature Review &amp; Benchmarking
+                </div>
+                <div class="project-details__tools-used-item">3D Printing</div>
+                <div class="project-details__tools-used-item">Soldering</div>
+                <div class="project-details__tools-used-item">
+                  Sensor Calibration
+                </div>
+                <div class="project-details__tools-used-item">
+                  Test Fixture Design
+                </div>
+                <div class="project-details__tools-used-item">
+                  PCB Integration
+                </div>
+                <div class="project-details__tools-used-item">
+                  Rapid Prototyping
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                href="https://www.linkedin.com/in/janicehu2001/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="Janice Hu on LinkedIn"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/janicehu_0829/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="Janice Hu on Instagram"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Janice Hu</h4>
+            <p class="main-footer__short-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+              tempora explicabo quae quod deserunt
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
